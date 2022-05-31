@@ -221,14 +221,14 @@ public class CalculatorTest {
 	
 	@Test
 	public void testDivideBMin() {
-		int a = 9999;
-		int b = 0;
+		int a = 0;
+		int b = 9999;
 		
 			Calculator cal = new Calculator();
 			int actual = cal.divide(a, b);
 			
-			int expected = 0;
-			assertEquals (expected, actual);
+			int expected = 1;
+			assertNotEquals (expected, actual);
 	}
 	
 	@Test
